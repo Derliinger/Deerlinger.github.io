@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Metodo de Pago</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="payment">
+  <h2 class="">Método de pago</h2>
+  <div class="payment-tab" id="payment-tab-1">
+    <div class="payment-radioGroup">
+      <input checked type="radio" name="cardType" id="creditCart" value="creditCard">
+      <label for="creditCart">Tarjeta bancaria</label>
+      <img class="" src="http://res.cloudinary.com/dvdvx4e9x/image/upload/v1499409361/MasterCard_Logo.svg_zxc1v6.png" alt="logo">
+      <img class="" src="http://res.cloudinary.com/dvdvx4e9x/image/upload/v1499409361/visa-logo-high-resolution_codkhw.jpg" alt="logo">
+    </div>
+    <div class="creditCart-form">
+      <div class="textInputGroup">
+        <label for="cardNumber">Número de tarjeta</label>
+        <input id="cardNumber" name="cardNumber" placeholder="1234 - 5678 - 9876 - 5432" required type="text">
+      </div>
+      <div class="textInputGroup textInputGroup-halfWidth">
+        <label for="expirationDate">Fecha de caducidad</label>
+        <select name="cardExpirationMonth" id="ccMonth" title="Month:">
+                                    <option value="" selected="selected">MM</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select> &nbsp;/&nbsp;
+        <select name="cardExpirationYear" id="ccYear" title="Year:">
+                                    <option value="" selected="selected">YYYY</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                </select>
+      </div>
+      <div class="textInputGroup textInputGroup-halfWidthRight">
+        <label for="cvc">CVC</label>
+        <input id="cvc" name="cvc" placeholder="XXX" required type="text">
+      </div>
+      <div class="textInputGroup">
+        <label for="nameOnCard">Nombre en la tarjeta</label>
+        <input id="nameOnCard" name="nameOnCard" required type="text">
+      </div>
+    </div>
+  </div>
+  <div class="payment-tab" id="payment-tab-2">
+    <div class="payment-radioGroup">
+      <input id="paypal" name="cardType" type="radio" value="paypal">
+      <label for="paypal">PayPal</label>
+      <img src="http://res.cloudinary.com/dvdvx4e9x/image/upload/v1499409361/PayPal_spzpbd.png">
+    </div>
+    <p class="showpaypal">Será redirigido a PayPal para completar su compra de forma segura.</p>
+  </div>
+</div>
+<div class="complete-purchase">
+  <a href="" class="purchase-button">Compra completa</a>
+  <p>Al completar esta compra, estás de acuerdo con estos <a href="">Término de la condición</a></p>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
